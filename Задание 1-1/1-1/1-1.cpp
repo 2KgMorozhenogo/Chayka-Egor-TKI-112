@@ -1,11 +1,28 @@
 ﻿#include <iostream>
 #include <math.h>
-
 using namespace std;
-
+/**
+* \brief вычисление переменной A по заданной формуле
+* \param сonst double x - константа данная по условию
+* \param сonst double y - константа данная по условию
+* \param сonst double z - константа данная по условию
+* \return - значение a
+*/
 double GetA(const double x, const double y, const double z);
+
+/**
+* \brief вычисление переменной B по заданной формуле
+* \param сonst double x - константа данная по условию
+* \param сonst double y - константа данная по условию
+* \param сonst double z - константа данная по условию
+* \return - значение b
+*/
 double GetB(const double x, const double y, const double z);
 
+/**
+* \brief Точка входа в программу
+* \return Код ошибки(0 - успех)
+*/
 int main()
 {
 	const auto x = 0.61;
