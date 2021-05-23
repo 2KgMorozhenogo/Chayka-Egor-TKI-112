@@ -2,16 +2,6 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-/**
-* \brief ввод координат точек
-* \param xa - координата x точки a
-* \param ya - координата y точки a
-* \param xb - координата x точки b
-* \param yb - координата y точки b
-* \param xc - координата x точки c
-* \param yc - координата y точки c
-*/
-void input(double xa, double xb, double xc, double ya, double yb, double yc);
 
 /**
 * \brief Проверить лежит ли точки на одной прямой
@@ -28,27 +18,7 @@ void check(double xa, double xb, double xc, double ya, double yb, double yc);
 
 void input(double xa, double xb, double xc, double ya, double yb, double yc) // вводим функцию на ввод переменных
 {
-    setlocale(LC_ALL, "Russian");
-        
-    
 
-    std::cout << "Введите координаты точек A, B, C" << endl;
-
-    std::cout << "xa = ";
-    cin >> xa;
-    std::cout << "ya = ";
-    cin >> ya;
-
-
-    std::cout << "xb = ";
-    cin >> xb;
-    std::cout << "yb = ";
-    cin >> yb;
-
-    std::cout << "xc = ";
-    cin >> xc;
-    std::cout << "yc = ";
-    cin >> yc;
 }
 
 void check(double xa, double xb, double xc, double ya, double yb, double yc) //вводим функцию проверяющую лежат ли A, B, C точки на одной прямой
@@ -90,7 +60,27 @@ int main(void)
 {
     double xa, xb, xc, ya, yb, yc;
 
-    input(xa, xb, xc, ya, yb, yc);
+    setlocale(LC_ALL, "Russian");
+
+
+
+    std::cout << "Введите координаты точек A, B, C" << endl;
+
+    std::cout << "xa = ";
+    cin >> xa;
+    std::cout << "ya = ";
+    cin >> ya;
+
+
+    std::cout << "xb = ";
+    cin >> xb;
+    std::cout << "yb = ";
+    cin >> yb;
+
+    std::cout << "xc = ";
+    cin >> xc;
+    std::cout << "yc = ";
+    cin >> yc;
 
     check(xa, xb, xc, ya, yb, yc);
 
