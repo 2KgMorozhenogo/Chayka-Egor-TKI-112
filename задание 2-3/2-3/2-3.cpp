@@ -76,6 +76,16 @@ void check(double xa, double xb, double xc, double ya, double yb, double yc) //�
     }
 }
 
+/**
+* \brief точка входа в программу
+* \param xa - координата x точки a
+* \param ya - координата y точки a
+* \param xb - координата x точки b
+* \param yb - координата y точки b
+* \param xc - координата x точки c
+* \param yc - координата y точки c
+* \return Код ошибки(0 - успех)
+*/
 int main(void)
 {
     double xa, xb, xc, ya, yb, yc;
